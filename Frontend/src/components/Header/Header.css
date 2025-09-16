@@ -1,0 +1,18 @@
+.header{
+    height: 33vw;
+    margin: 30px auto;
+    background: url('../../assets/Header_img.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+}
+@media (max-width:750px) {
+    .header{
+        height: 45vw;
+        margin: 30px auto;
+        background: url('../../assets/Header_img.png') no-repeat;
+        background-size: cover;
+        position: relative;
+        border-radius: 20px;
+    }
+}
