@@ -5,7 +5,7 @@ import Login from './components/Login/Login'
 import { Navigate } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import Lead_list from './components/Lead_list/Lead_list';
-import CreateLead from './components/createLead/createLead';
+import CreateLead from './components/CreateLead/CreateLead';
 import EditLead from './components/EditLead/EditLead';
 
 
