@@ -17,7 +17,6 @@ app.use(express.json());
 app.use(cookieParser());
 
 const allowedOrigins = [
-  "http://localhost:5173",
   "https://lead-management-frontend-3g7e.onrender.com"
 ];
 app.use(cors({
