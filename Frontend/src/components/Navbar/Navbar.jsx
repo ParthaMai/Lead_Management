@@ -12,7 +12,7 @@ const Navbar = ({ setShowLogin }) => {
   useEffect(() => {
  const checkLogin = async () => {
   try {
-    const res = await axios.get("http://localhost:4000/api/user/me", { withCredentials: true });
+    const res = await axios.get("https://lead-management-backend-q5vr.onrender.com/api/user/me", { withCredentials: true });
     console.log("Response from /me:", res.data); 
     if (res.data.loggedIn) {
       setLoggedIn(true);
