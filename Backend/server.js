@@ -15,9 +15,21 @@ const port = process.env.PORT || 4000;
 
 app.use(express.json());
 app.use(cookieParser());
+
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://lead-management-frontend-3g7e.onrender.com"
+];
 app.use(cors({
-  origin: "http://localhost:5173",
-  credentials: true                
+  origin: function(origin, callback) {
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    } else {
+      return callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true
 }));
 
 //db connection
